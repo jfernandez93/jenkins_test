@@ -1,9 +1,9 @@
-pipeline { 
-    agent { docker 'python:3.5.1' }
+pipeline {
+    agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                sh 'python --version'
+                bat 'set'
             }
         }
     }
