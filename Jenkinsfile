@@ -1,13 +1,3 @@
-pipeline {
-    agent any
-    stages {
-        stage('Build') {
-            steps {
-                bat 'set' 
-            }
-        }
-    }
-}
 
 pipeline {
     agent { docker 'maven:3.3.3' }
